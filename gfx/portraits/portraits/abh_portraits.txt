@@ -1,0 +1,165 @@
+character = {
+	size = { x = 475 y = 380 }
+
+	entity = {
+		orientation = center_down
+		position = { x = 50 y = -20 }
+		scale = 24
+	}
+	#2d Portrait position
+	icon = {
+		orientation = center_down
+		position = { x = 0 y = 0 }
+		scale = 1.0
+	}
+}
+
+portraits = {
+
+	bebaus = { texturefile = "gfx/models/portraits/Custom/bebaus.dds" }
+	dusanyu = { texturefile = "gfx/models/portraits/Custom/dusanyu.dds" }
+	ekuryua1 = { texturefile = "gfx/models/portraits/Custom/ekuryua1.dds" }
+	ekuryua2 = { texturefile = "gfx/models/portraits/Custom/ekuryua2.dds" }
+	jinto1 = { texturefile = "gfx/models/portraits/Custom/jinto1.dds" }
+	jinto2 = { texturefile = "gfx/models/portraits/Custom/jinto2.dds" }
+	lafiel1 = { texturefile = "gfx/models/portraits/Custom/lafiel1.dds" }
+	lafiel2 = { texturefile = "gfx/models/portraits/Custom/lafiel2.dds" }
+	lafiel3 = { texturefile = "gfx/models/portraits/Custom/lafiel3.dds" }
+	lexshue = { texturefile = "gfx/models/portraits/Custom/lexshue.dds" }
+	ramaj = { texturefile = "gfx/models/portraits/Custom/ramaj.dds" }
+	spoor = { texturefile = "gfx/models/portraits/Custom/spoor.dds" }
+	trife = { texturefile = "gfx/models/portraits/Custom/trife.dds" }
+}
+
+
+   
+portrait_groups = {
+    abh = {
+		  default = lafiel1
+        	  game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+           		add = {
+				trigger = {
+					ruler = { gender = male }
+				}
+                		portraits = {
+				
+					dusanyu
+					bebaus
+					jinto1
+					jinto2
+					trife
+				}
+			}
+			add = {
+				trigger = {
+					ruler = { gender = female }
+				}
+				portraits = {
+					
+					lafiel1
+					lafiel2
+					lafiel3
+					ekuryua1
+					ekuryua2
+					lexshue
+					ramaj
+					spoor
+					
+				}
+			}
+
+		}
+
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+
+					bebaus
+					dusanyu
+					jinto1
+					jinto2
+					trife
+					ekuryua1
+					ekuryua2
+					lafiel1
+					lafiel2
+					lafiel3
+					lexshue
+					ramaj
+					spoor
+				}
+			}
+
+		}
+		
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				portraits = {
+			             	
+					bebaus
+					dusanyu
+					jinto1
+					jinto2
+					trife
+					ekuryua1
+					ekuryua2
+					lafiel1
+					lafiel2
+					lafiel3
+					lexshue
+					ramaj
+					spoor
+             
+				}
+			}
+
+		}
+		
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				portraits = {
+
+					bebaus
+					dusanyu
+					jinto1
+					jinto2
+					trife
+					ekuryua1
+					ekuryua2
+					lafiel1
+					lafiel2
+					lafiel3
+					lexshue
+					ramaj
+					spoor
+				}
+			}
+
+		}	
+		
+		#leader scope 
+		ruler = {
+			add = {
+				portraits = {
+
+					bebaus
+					dusanyu
+					jinto1
+					jinto2
+					trife
+					ekuryua1
+					ekuryua2
+					lafiel1
+					lafiel2
+					lafiel3
+					lexshue
+					ramaj
+					spoor
+				}
+			}
+
+		}
+	}
