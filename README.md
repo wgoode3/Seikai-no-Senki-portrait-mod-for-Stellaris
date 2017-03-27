@@ -3,6 +3,6 @@ My attempt at a portrait mod for the game Stellaris by Paradox. Adds an elf-like
 Seems to work in version 1.4.1 of the game.
 
 ## To Install 
-Place the abh.mod file in: C:\Users\{{Username}}\Documents\Paradox Interactive\Stellaris\mod and make sure all the other files are in the same diectory in a folder called 'abh'.
+Place the abh.mod file in: C:\Users\<Your username>\Documents\Paradox Interactive\Stellaris\mod and make sure all the other files are in the same directory in a folder called 'abh'.
 
 Don't forget to enable it in the mods section of the game launcher. 
